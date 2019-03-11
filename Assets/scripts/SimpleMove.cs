@@ -13,8 +13,9 @@ public class SimpleMove : MonoBehaviour
 
     void Update()
     {
+       float horizontaInput = Input.GetAxisRaw("Horizontal");
         float So = transform.position.x;
-        float S = So + SpeedFactor * Time.deltaTime;
+        float S = So + horizontaInput * SpeedFactor * Time.deltaTime;
       transform.position = new Vector3( S, transform.position.y, transform.position.z);
     }
 }
