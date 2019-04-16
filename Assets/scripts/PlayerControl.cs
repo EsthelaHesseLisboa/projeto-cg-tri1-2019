@@ -9,6 +9,7 @@ void OnTriggerEnter2D(Collider2D other){
         SFXManager.instance.ShowCoinParticles(other.gameObject);
         AudioManager.instance.PlaySoundCoinPickup(other.gameObject);
         Destroy(other.gameObject);
+        SceneManager.instance.IncrementCoinCount();
     }
 }
   
