@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1614141681255805691}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pos1
   m_TagString: Untagged
   m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
@@ -39,7 +39,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1614141681895761811}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pos2
   m_TagString: Untagged
   m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
@@ -70,9 +70,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1614141682052361350}
   - component: {fileID: 1614141682052361345}
-  m_Layer: 0
+  - component: {fileID: 1149506061370622739}
+  m_Layer: 9
   m_Name: GhostMoving
-  m_TagString: Untagged
+  m_TagString: Ghost
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111,6 +112,32 @@ MonoBehaviour:
   pos2: {fileID: 1614141681895761811}
   waitTime: 0.5
   speed: 2
+--- !u!114 &1149506061370622739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1614141682052361344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52be51ddc72d4e542898d5a9dc7eedd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 8822791667166760490, guid: b5c5230d3b5c1a84b9a1a6f159b75988, type: 3}
+  spawnPoint: {fileID: 2362069271295601522, guid: 010f4bcedb8cb724f92e754bf3ace20c,
+    type: 3}
+  waitTime: 3
+  projectileSpeed: 3
+  directions:
+  - {x: -1, y: 0, z: 0}
+  - {x: -0.7, y: 0.7, z: 0}
+  - {x: 0, y: 1, z: 0}
+  - {x: 0.7, y: 0.7, z: 0}
+  - {x: 1, y: 0, z: 0}
+  - {x: 0.7, y: -0.7, z: 0}
+  - {x: 0, y: -1, z: 0}
+  - {x: -0.7, y: 0.7, z: 0}
 --- !u!1001 &1614141681934264203
 PrefabInstance:
   m_ObjectHideFlags: 0
