@@ -125,8 +125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 8822791667166760490, guid: b5c5230d3b5c1a84b9a1a6f159b75988, type: 3}
-  spawnPoint: {fileID: 2362069271295601522, guid: 010f4bcedb8cb724f92e754bf3ace20c,
-    type: 3}
+  spawnPoint: {fileID: 3936520123202358521}
   waitTime: 3
   projectileSpeed: 3
   directions:
